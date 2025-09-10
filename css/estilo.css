@@ -23,10 +23,6 @@ html {
 body {
     background: var(--escuro);
     color: var(--claro);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Início nav */
@@ -138,6 +134,12 @@ body {
 
 }
 
+.reto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .icones {
     display: flex;
     gap: 1rem;
@@ -151,5 +153,27 @@ body {
     }
 }
 
-
 /* Fim Sobre*/
+
+/* Início seção de projetos */
+.projetos {
+    padding: 6rem 2rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+.card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    /* Aqui ele fala onde a imagem tem que cobrir, aí eu falei que ela tem que cobrir tudo onde ela está, mas respeitando os valores que coloquei acima. */
+}
+
+
+
+
+/* Fim seção de projetos */
