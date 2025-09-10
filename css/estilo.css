@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    /* Isso Serve para quando o mouse for rolar a tela, o movimento seja suave */
+    scroll-behavior: smooth;
+
+}
+
+:root {
+    --primaria: #4f46e5;
+    --secundaria: #7c3aed;
+    --escuro: #0f172a;
+    --maisescuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background: var(--escuro);
+    color: var(--claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Início nav */
+.navegacao {
+    position: fixed;
+    top: 0;
+    /*Pra ele sempre ficar no topo*/
+    background: rgba(15, 23, 42, 0.8);
+    /*Esse 0.8 no final, é o quanto essa cor é opaca/transparente*/
+    width: 100%;
+    z-index: 100;
+    /*Aqui ele determina quem fica na frente de quem*/
+    padding: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    /* Aqui ele tirou as bolinhas da lista */
+    justify-content: center;
+    gap: 3rem;
+
+
+    a {
+        color: var(--claro);
+        font-weight: 500;
+        text-decoration: none;
+        position: relative;
+        padding: 0.5rem 0;
+    }
+
+    a::after {
+        content: '';
+        height: 2px;
+        width: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+        transition: width 0.5s ease;
+    }
+
+    a:hover::after {
+        width: 100%;
+    }
+}
+
+/* Fim nav */
+
+/* Início Main */
+.cabecalho {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+        font-size: 3.5rem;
+        color: var(--primaria);
+        font-weight: bold;
+        margin: 20px;
+    }
+
+    p {
+        font-size: 1.5rem;
+        color: var(--claro);
+    }
+}
+
+.foto-perfil {
+    height: 300px;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+    border-radius: 50%;
+    border: 4px solid var(--vidro);
+}
+
+/* Fim Main */
+
+/* Início Sobre*/
+.sobre {
+    /* padding: 6rem 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    gap: 8%;
+    width: 95%;
+    /* background: yellow; */
+
+
+    h2 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    p {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .perfil2 {
+        width: 250px;
+        border-radius: 20px;
+        border: 4px solid var(--vidro);
+        box-shadow: 0 0 20px rgba(39, 33, 159, 0.3);
+    }
+
+}
+
+.icones {
+    display: flex;
+    gap: 1rem;
+
+    img {
+        transition: transform 0.4s ease;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+/* Fim Sobre*/
