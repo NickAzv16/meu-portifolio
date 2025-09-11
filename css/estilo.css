@@ -158,11 +158,52 @@ body {
 /* Início seção de projetos */
 .projetos {
     padding: 6rem 2rem;
+
+    h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
 }
 
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--vidro);
+    overflow: hidden;
+    /* Esse overflow é para se o item estiver muito grande e esparramar, é para esconder as sobras.*/
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+        transform: translateY(-10px) scale(1.03);
+        background: #0a0f1c;
+
+    }
+
+    p {
+        color: rgba(226, 232, 240, 0.8);
+        line-height: 1.25rem;
+    }
+
+}
+
+.txt-projetos {
+    padding: 1.5rem;
+
+    h3 {
+        margin-bottom: 5px;
+    }
 }
 
 
