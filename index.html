@@ -99,12 +99,12 @@
     <!-- Início seção contato -->
     <section class="contato" id="contato">
         <h2>Entre em Contato</h2>
-        <form class="formulario" id="contato">
+        <form class="formulario" id="contato" onsubmit="enviarWhats(event)">
             <div class="campo">
-                <input class="input" type="text" placeholder="Nome">
+                <input id="nome" class="input" type="text" placeholder="Nome" required>
             </div>
             <div class="campo">
-                <textarea class="input" placeholder="Digite sua mensagem"></textarea>
+                <textarea id="mensagem" rows="5" class="input" placeholder="Digite sua mensagem" required></textarea>
             </div>
             <button type="submit" class="botao-form">Enviar via Whatsapp</button>
         </form>
