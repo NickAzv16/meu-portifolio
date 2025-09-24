@@ -161,10 +161,15 @@ body {
 
 }
 
+.sobre {
+    max-width: 100%;
+}
+
 .reto {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
 }
 
 .icones {
@@ -222,6 +227,8 @@ body {
         line-height: 1.25rem;
     }
 
+
+
 }
 
 .txt-projetos {
@@ -229,6 +236,22 @@ body {
 
     h3 {
         margin-bottom: 5px;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    a {
+        font-size: 17px;
+        color: #fff;
+        text-decoration: none;
+        transition: ease 0.5s;
+
+        &:hover {
+            color: var(--secundaria);
+
+        }
     }
 }
 
@@ -270,6 +293,8 @@ body {
     &:hover {
         opacity: 1;
     }
+
+    /* Eu desativei esse overlay, por que eu achei que estava muita informação, aí optei por algo mais simples */
 }
 
 /* Fim seção de projetos */
