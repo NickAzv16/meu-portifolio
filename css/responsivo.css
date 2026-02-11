@@ -1,3 +1,5 @@
+/*responsivo para celular */
+
 @media(max-width:480px) {
 
     .secao-sobre {
@@ -11,4 +13,13 @@
         }
     }
 
+}
+
+/* responsivo para tablet */
+
+@media (min-width:481px) and (max-width:850px) {
+
+    .sobre {
+        padding: 0 3rem;
+    }
 }
