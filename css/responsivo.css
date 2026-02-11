@@ -1,0 +1,17 @@
+@media(max-width:480px) {
+
+    .secao-sobre {
+
+        .sobre {
+            /* flex-direction: column; */
+        }
+
+        .sobre-caixa {
+            /* display: flex;
+            flex-direction: column;
+            background-color: yellow; */
+        }
+    }
+
+
+}
