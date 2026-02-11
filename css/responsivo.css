@@ -3,15 +3,12 @@
     .secao-sobre {
 
         .sobre {
-            /* flex-direction: column; */
+            flex-direction: column;
         }
 
         .sobre-caixa {
-            /* display: flex;
-            flex-direction: column;
-            background-color: yellow; */
+            max-width: 90%;
         }
     }
-
 
 }
